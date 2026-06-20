@@ -2,7 +2,7 @@
 
 A modern, light-weight developer portfolio featuring a dynamic project showcase powered by a decoupled React frontend and a secured Node.js/Express CRUD API. 
 
-## 🏗️ Architecture Overview
+## Architecture Overview
 
 This portfolio is built using an isolated multi-tier architecture, abandoning fragile frontend mocks for a fully operational database-driven management layer.
 
@@ -13,7 +13,7 @@ This portfolio is built using an isolated multi-tier architecture, abandoning fr
 
 ---
 
-## 🚀 Technical Highlights
+## Technical Highlights
 
 * **Custom Admin Panel:** Secured backend dashboard capable of handling dynamic updates (Upsert operations) to add or edit live portfolio entries.
 * **Isolated Data Management:** Independent `POST`, `PUT`, and `DELETE` routes ensuring complete separation of concerns between layout styling and data flow.
@@ -22,7 +22,7 @@ This portfolio is built using an isolated multi-tier architecture, abandoning fr
 
 ---
 
-## 🛠️ Local Development Setup
+## Local Development Setup
 
 ### 1. Prerequisites
 * Node.js (v18+)
@@ -30,17 +30,19 @@ This portfolio is built using an isolated multi-tier architecture, abandoning fr
 
 ### 2. Backend Configuration
 Navigate to the `backend` directory, install dependencies, and configure your local environment:
-```cd backend
-npm install```
+
+`cd backend`
+`npm install`
 
 Create a .env file in the root of the backend directory with the following information:
-```PORT=5050
-REAL_ADMIN_PASSWORD="your_local_secure_password"
-SESSION_SECRET="your_local_session_secret"```
+`PORT=5050`
+`REAL_ADMIN_PASSWORD="your_local_secure_password"`
+`SESSION_SECRET="your_local_session_secret"`
 
-Start with ```node server.js```
+Start with 
+`node server.js`
 
 ### 3. Frontend Configuration
-```cd ../frontend
-npm install
-npm run dev```
+`cd ../frontend`
+`npm install`
+`npm run dev`
